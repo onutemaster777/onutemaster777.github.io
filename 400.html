@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bad Request</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="UTF-8">
+<style>
+body { text-align: center; font-family: Tahoma, Arial, sans-serif; cursor: url("/def.png"), default; }
+a {cursor: url("/poi.png"), pointer;}
+.credits {text-align: right;}
+.dialog {display: inline-block; padding: 4px 4px; border: 1px solid black; border-radius: 10px; background: silver; max-width: 100%;}
+.dialogImage {text-align: left; float: left; padding: 50px;}
+</style>
+</head>
+<body>
+<div id="main" class="dialog">
+<img src="/warning.png" class="dialogImage" width="50px">
+<h1>400 Bad Request</h1>
+<p>The page is sending a bad request which it cannot be processed.</p>
+<br>
+<p><b>Reasons:</b></p>
+<ol>
+<li>Try again.</li>
+</ol>
+<br>
+<a href="/">Back to Home</a>
+<br><br>
+<p class="credits">All rights reserved. HyperWORLD Server Ltd. 2019-2023.</p>
+</div>
+<script>
+// ONUTEWORLD.TK LTD 2023/05/20
+document.getElementById("isCorrectURL").innerHTML = window.location.pathname;
+</script>
+</body>
+</html>

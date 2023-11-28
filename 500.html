@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Internal Server Error</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+body { text-align: center; font-family: Tahoma, Arial, sans-serif; cursor: url("/def.png"), default; }
+a {cursor: url("/poi.png"), pointer;}
+.credits {text-align: right;}
+.dialog {display: inline-block; padding: 4px 4px; border: 1px solid black; border-radius: 10px; background: silver; max-width: 100%;}
+.dialogImage {text-align: left; float: left; padding: 50px;}
+</style>
+</head>
+<body>
+<div id="main" class="dialog">
+<img src="/ban.png" class="dialogImage" width="50px">
+<h1>500 Internal Server Error</h1>
+<p>There is something wrong with this website. Please try again later.</p>
+<br>
+<p><b>Or you can try:</b></p>
+<ol>
+<li><span id="isCorrectURL"></span> could be still busy until the server goes active.</li>
+<li>There is a Unicode character for this URL.</li>
+</ol>
+<br>
+<a href="/">Back to Home</a>
+<br><br>
+<p class="credits">All rights reserved. HyperWORLD Server Ltd. 2019-2023.</p>
+</div>
+<script>
+// ONUTEWORLD.TK LTD 2023/05/20
+document.getElementById("isCorrectURL").innerHTML = window.location.pathname;
+</script>
+</body>
+</html>
