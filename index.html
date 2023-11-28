@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HyperWorld - The Special Final Release</title>
+<meta charset="UTF-8">
+<meta data-react-helmet="true" property="og:title" content="HyperWORLD">
+<style>
+body { cursor: url("/def.png"), default; text-align: center; background-image: linear-gradient(to bottom, cyan, orangered, chocolate); font-family: "Franklin Gothic Medium", Helvetica, Arial, sans-serif; }
+a { cursor: url("/poi.png"), pointer; text-decoration: none; color: yellow;}
+blockquote, iframe, #sloppy { text-align: center; margin-left: 200px; }
+#menu { background: black; background-image: radial-gradient(ellipse at bottom, red, yellow); display: flex; white-space: pre-wrap;}
+#menu a { text-decoration: none; color: white; font-family: "Microsoft YaHei", Arial, sans-serif; transition: 0.3s; background: black; background-image: radial-gradient(ellipse at center, silver, black); }
+#menu a:active { text-decoration: none; color: white; font-family: "Microsoft YaHei", Arial, sans-serif; background: hotpink; background-image: radial-gradient(ellipse at center, black, silver); }
+#menu a:hover { text-decoration: none; color: black; font-family: "Microsoft YaHei", Arial, sans-serif; background: white; background-image: radial-gradient(ellipse at center, white, grey); }
+#sloppy {background-image: linear-gradient(45deg, #c6c8cc, #5d7af2, #44c549, #ff4546, #2e7dd0, #af70af, #38b2e1, #404040, #7e7d7f, #dde3ed, #fefd33); max-width: 500px; display: inline-flex;}
+#logo {transform: scale(1); transition: 1s; }
+// #logo:hover {transform: scaleY(0.7); }
+// #logo:active {transform: scaleY(0.5); }
+#timeBanner { background: orangered;font-family: "Papyrus", "Times New Roman", sans-serif;}
+hr { color: black; background: black; }
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: black;
+}
+
+::-webkit-scrollbar:track {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: orangered;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: orangered;
+}
+
+@keyframes rainbow {
+    0%, 100% {
+        color: yellow;
+    }
+    33% {
+        color: hotpink;
+    }
+    66% {
+        color: cyan;
+    }
+}
+
+#dvd {
+    animation: rainbow 60s linear infinite;
+	animation-direction: alternate;
+}
+
+.rainbowTest {
+    animation: rainbow2 3s linear infinite;
+	animation-direction: alternate;
+}
+
+@keyframes rainbow2 {
+    0%, 100% {
+        filter: hue-rotate(0deg);
+    }
+    33% {
+        filter: hue-rotate(180deg);
+    }
+    66% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.rainbowDvd {
+    animation: dvdAlert 3s linear infinite;
+	animation-direction: alternate;
+}
+
+@keyframes dvdAlert {
+    0%, 100% {
+        color: cyan;
+		background: blue;
+    }
+    25% {
+        color: red;
+		background: lime;
+    }
+    25% {
+        color: cyan;
+		background: blue;
+    }
+	50% {
+        color: yellow;
+		background: red;
+    }
+	75% {
+        color: cyan;
+		background: blue;
+    }
+	100% {
+        color: magenta;
+		background: hotpink;
+    }
+}
+#iconhover {border-radius:50%; transition: 0.45s;}
+#iconhover:hover {border-radius:50%; filter:brightness(1.5);}
+</style>
+</head>
+<body>
+<div id="main">
+<img src="logo.svg" alt="HyperWorld - The Special Final Release" width="500px" id="logo">
+<br>
+<h1>HyperWorld - The Special Final Release</h1>
+<h3>A legitimate "fanbase" site from 2019 to 2023.</h3>
+<br>
+<div id="announcement1" style="display: none;">
+<h2 style="color:yellow;">Everyone who uses Discord will be disallowed. You'll have to wait for the next day or week until some hard staffs/employees patching this issue. <span style="color:black;"> - OnuteWORLD Server Team</span></h2>
+<p>Please visit BonziWORLD FE for more activity!</p>
+</div>
+<br>
+<p>Oh, so do you want BonziWORLD FE online? No, it's because of my ISP and I'm tired of it. All the servers from earlier were down and they no longer exist.</p>
+<br>
+<img src="hyperworld_icon.png" width="150px" id="iconhover">
+<br>
+<h1>If there's a problem with this site, please contact us <a href="mailto:danieliuspaulavicius@gmail.com">here!</a></h1>
+<br>
+<p>If you want to host the servers offline, here's some links which you need. Modifying is required (unless your computer is different)! <a href="https://www.mediafire.com/folder/2vssve1lnr5yh/BonziWORLD+Servers">Folder 1</a> and <a href="https://www.mediafire.com/folder/nujzrpl51zumq/2019_servers">Folder 2</a>.</p>
+<p>Depending on what Internet service provider are you using, you may be blocked by ISP for port forwarding or your modem itself.</p>
+<hr>
+<h2>Why HyperWorld was created?</h2>
+<p>Oof, that was a long story. Back on early 2019, I started my first FTP server running on ES File Explorer in my middle school when I was 13 (as you have heard this app is being malicious by Play Protect). Nevertheless, this server is only temporary and it's running on my older phone "Sony Xperia M4 Aqua", but it didn't work very well. I changed a few hotspot names where the students can connect to my hotspot and search something nasty which they did not want to visit my FTP server acting as a web server, because I'm too dumb at hosting sites. It was called "FireGamesDownload" by the way when I didn't learn the right skills of HTML. But in the bright side in mid-2018, I started learning HTML for a little bit, but as a 12-year old kid, my coding skills were too terrible for me.<br>
+Back on Late July 2019, I've been trying to host the server without any port forwards or tricks, but I also went into his Discord server to tell a person who is responsible of BWR ("BonziWORLD Revived") bringing the site back to life and two sites were the superiors; just like how Foodz and Seamus did it. I told him how to make a BonziWORLD server of myself without having to access the public site ever again. For most conflicts that Seamus did actually forget what to do; "port forwarding". The sunset is coming, time to sleep. That's a issue where I'm getting that I'm not forwarding to everyone. A few minutes later, I finally made this server up for everyone and now I can host anything whatever I want to.<br>
+In the end of November 2019, I made my first community called "OnuteWORLD" and the site's color is actually a teal for top and bottom cards. There's wasn't the domain that has been linked to something else, but it has never implemented to it.
+<br>
+When I got banned from bonzi.world (or bonzi.dega.io if you are sure), the ban reason says: "ONUTEWORLD? MORE LIKE GAYWORLD", so I got my own idea as my second site of BonziWORLD FE's prototype called as "F@ckWORLD" with cuss words around the site. It wasn't totally sure that FuckWORLD is a opposite thing for young children can visit the site and ruin their feelings by themselves from using this site, so I have decided to update it more for eight months of my work to turn into a final release of BonziWORLD FE. I'm skipping to two years of incomplete creation for BonziWORLD FE. I started to work BonziWORLD FE again with more skills as I possibly can. Every update is a "sometime marking" when not all the features will begin working and make it capable as a successful website without any detail to be added.
+<br>
+Back in November 25th, 2023, the company name is now changed due to privacy reasons. "Onute" means "the owner" for what should be called for, and typically changing to "Hyper" as a very successful website name. The owner has tired of using its own past name where he doesn't want to hear from any person who is obsessed with my past name, referred as "deadname". They are not so usable, but it can make anyone mad if someone uses the past name for nothing.
+<br>
+After I made a clone of "BonziWORLD Revived", I renamed to "OnuteWORLD Revived" which it exactly consisted to be a third BonziWORLD site. In February 2nd, 2020, the things are getting worse now. When I flushed the toilet and went to my main computer for what I have been working, I saw two people (Erik and Seamus) sitting in my third website asking me that I need to take it down, but I actually "refuse" to take my server down for what Seamus is saying. The footage can still be found <a href="https://www.youtube.com/watch?v=Ft-evp9wa0I" target="_blank">right here</a>.
+</p>
+<h2>Do you like watching BFDI?</h2>
+<p>I've usually watch BFDI and TPOT. Keep those TPOT 6 leakers out of their mind. The latest TPOT episode is TPOT 8.</p>
+<h2>What is your favorite color?</h2>
+<p>Totally orange and purple.</p>
+<h2>What's your Discord tag?</h2>
+<p style="color:royalblue;">@thisuserdoesnotexist</p>
+<p>Later on, I would also create a new account for reasons, definitely ruining my reputation.</p>
+<h2>What's your Discord server?</h2>
+<p><a href="https://discord.gg/DpBBJkBuzQ">Discord server</a></p>
+<h2>Have you been banned from other websites?</h2>
+<p>I remember these sites that I got banned: Omegle (it died so long), Multiplayer Piano, BonziWORLD modified versions back in 2019, Minecraft PE servers and almost extreme unhelpful Discord servers.</p>
+<li>I was banned from Omegle for hijacking the camera with my special program called "ManyCam". It was just a prank. But later it was closed down by the founder of Omegle for abusing minors.</li>
+<li>I was banned from Multiplayer Piano for botting. This moderation was literally automated by not the owner, but the automated bot.</li>
+<li>In 2019, there are many ban reasons from BWR where I am not going to talk about which comes to my mind.</li>
+<li>Back in 2020, Growtopia has had a serious controversies to go to people's worlds as they really want to collect the resources and raid my world. Since Growtopia was back in 2013 and you know why it has been raided so much times? I created a world lock given by my French girlfriend which it lasted and remembered for half-decade named AHTG (Les Inexusibles d'Android High Tech Google, Ahtg The French Trainspotter or Majda) has the gold WL (full term "world lock") for a long time. There are two bans for me today, determining that is the past that I have to explain about me. First of all, I was banned from Growtopia for one week for no reason; <b>TYPICALLY AT THE TRADING STORE!</b> And second, I got banned from Growtopia for 3 days for using Cheat Engine.<br>I know why it sucks? Banning me from the game server will give me that I am a clown or something, but it's like that I am infamous person is to never imagine and immediately deleting your account by the moderators. As well as I concern, I went with my charcoals and quitted Growtopia in early 2020 for some reasons; they keep raiding my world names as you know they visit and raid there for the f@ck's sake.</li>
+<li>There's a <b>ONE</b> person to make themselves cringe for having an argument for profile picture problems and trying to get me terminated for impersonating a profile picture by the way... HQC (full term "High Quality Content") was falsely making accusations back in 2018 when I started looking at those videos partnering with MarioTheSpartan (a tough remixer) punishing me for the reason that I am mocking over the person copying his profile picture, related to SpongeBob SquarePants episode; since he's been using a program "CyberLink PowerDirector" for Windows, but later he moved to Sony Vegas. In the next year, I joined in his Discord server back in mid-2019 and I got banned by a stupid penguin who has a lot of English functionality. Lately for his channel got terminated for violating YouTube's Terms of Service; as he's been doing a Sub4Sub treat for his channel and it got terminated in a while, well good job YouTube for doing this job. Back then in 2021, once we met that HQC was truthfully explaining about his old channel; he never uses bots to gain subscribers.</li>
+<li>Have you heard the fanmade game of Super Mario Sunshine 128? That's right folks! Runouw officially created the game from scratch of Super Mario 63! This is the best game in my childhood playing back in the era of 2015.
+<i>I'm going to talk about the criticism of SM63's Discord server right now. Put your sunglasses on it, because it's really explicit. </i> As I joined the Super Mario 63 Discord Server, there's no other point to see what's happening in this server. April and Sekanor are the superiors of Super Mario 63 - they were moderating each other. When I uploaded those videos on YouTube instead of Discord, because you know it is a possible thief to steal someone's video without the authority to do so. When I uploaded them to the video streaming site, I started acting woozy and crazy towards to this server reacting that I am the one has been stealing and uploading the video straight to YouTube (oh well, sometimes you may be autistic if you act this crazy), if they tried to report my channel and making me terminated, I would get into trouble with my parents. It's only the cause that I'm using grandma's YouTube channel. Since after they wrote a serious contact as a theft, I got immediately banned from SM63's Discord server for life for trolling people. I know it's not good to troll towards people on Discord, and yeah if I troll a person when he is working with the server, he will report me straight to Discord's ticket request and get me banned for bothering and/or begging a person from the entire platform anymore. And also I got banned from PixelLoaf's Discord server too as well with the same reason.</li>
+<h2>What year did you play Minecraft?</h2>
+<p>Around in mid-2015. This is where I found the game reading the kid's magazine in the back, saying that Tom was playing Minecraft in 2015, so I hooked it up to play a beta version of Minecraft for free on my older laptop, but it is quite laggy. I rarely play Minecraft, because of my <b>STUPID</b> integrated GPU causing issues and has microstutters every 10 seconds! Even worse, VLC sometimes crashes my integrated GPU being overloaded and turns into a white screen! Gosh, I need a gaming desktop with RTX GPU instead of laptop. This needs some paperwork... I think I sometimes did by going to latest version of Linux Mint live USB and playing a video has no microstutters, but sometimes it could be stupefying.</p>
+<h2>What's your oldest phone and computer?</h2>
+<p>Samsung Galaxy S2 is the first device that I used in 2012. I used to play Fruit Ninja where the game was two years now and my oldest computer are two computers were running Windows XP operating system. I had so much memories from using this.</p>
+<h2>What will you be doing in the future?</h2>
+<p>I will be quitting the Internet in the start of New Year's Eve 2024. I have been as a teenager for one decade. I like technology. music and arts, I don't want to exist, never will. Why people would do that nowadays after I interacted with them and telling me to stop? Even they expose me for doing something wrong? I did nothing wrong. I am a person, but who are you? A coward? You shouldn't be here in the internet. Some of bad news were occurred was my ISP blocked port forwarding from someone's router, updated Google Colab rules, updated YouTube system, Google will begin deleting all the accounts before December 1st and much much more bad stuff going on. I wish if I host my own home server and go on it every day without going to external internet sites and most importantly - breaking from the Internet for 10 years if something changes and will make my day happy even better if everything has been wiped and resolved. I am dead.<br><h2>What will happen to your stuff?</h2><br>Nothing will happen, but sometimes if the drama goes over on one of my YouTube channels, I will not care about them until my channel gets terminated or whatever else you can say. I will delete a few YouTube channels that I don't need them and I will also delete Google accounts that are no longer needed anymore for most cases. I will abandon them with some silly old angry messages out of someone that I have proved extremely wrong, unfathomable, delusional and uncomfortable.</p>
+<br>
+<h1>Other links: </h1>
+<p>There are no other links to visit. The only thing is the website that has some limited features without having anything in there. If you are the hoarder, I want you to become a programmer and buy a home server with a new ISP. This thing would not last amazing.</p>
+<br>
+<br>
+<br>
+<div id="menu" style="max-width: 600px;display:inline-flex;">
+<p><a href="phonemes.html">FakeYou phonemes</a></p>
+<p><a href="davidegan.html">David Egan Rant</a></p>
+<p><a href="/latvia_vacation">Latvia journey</a></p>
+<p><a href="swearing.html">Swearing</a></p>
+<p><a href="training_voice.html">FakeYou voice training</a></p>
+<p><a href="/exploit">Exploits (OLD)</a></p>
+<p><a href="ytconverter.html">YouTube Thumbnail Converter</a></p>
+<p><a href="gg.html">Game Genie Randomizer</a></p>
+<p><a href="converter.html">Enchantment Table Converter</a></p>
+</div>
+<p>For eating my bandwidth for every single download, I would recommend you downloading them some garbage stuff on MediaFire instead of hosting my own website and then getting toxxed by the ISP and not initializing the broadband.</p>
+<br>
+<p>All rights reserved. HyperWORLD Server Ltd. 2019-<span id="onuteYear"></span>.</p>
+<div id="timeBanner" style="display: none;"><h1>Your time: <span id="timeNow"></span></h1></div>
+</div>
+<iframe src="https://ezstat.ru/2RqKe7" width="1" height="1"></iframe>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+document.getElementById("onuteYear").innerHTML = new Date().getFullYear();
+});
+
+window.addEventListener("load", () => {
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js");
+  }
+});
+
+// if(window.location.hostname === "78.63.40.199"){document.getElementById("warning").style.display = "none"}
+
+// var songs = ["GoodLuck2.mp3","Votely.mp3","Readme.mp3","Safety.mp3"];
+// var songB = new Audio(songs[Math.floor(Math.random()*songs.length)])
+// setInterval(function(){songB.play()}, 1000);
+
+// setInterval(function(){
+/// Half day
+// var year = new Date().getFullYear();
+// var month = new Date().getMonth();
+// var day = new Date().getDate();
+
+// Day now
+// var hours = new Date().getHours();
+// var minutes = new Date().getMinutes();
+// var seconds = new Date().getSeconds();
+
+// Running time
+// var mils = new Date().getMilliseconds();
+
+// document.getElementById('timeNow').innerHTML = month + "/" + day + "/" + year + " - " + hours + ":" + minutes + ":" + seconds + "." + mils;}, 1);
+</script>
+</body>
+</html>
