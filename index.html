@@ -28,10 +28,12 @@ body, html {
   padding: 10px 1px;
   font-size: 10px;
   width: 25%;
+  transition: 0.3s;
 }
 
 .tablink:hover {
   background-color: #777;
+  transition: 0.3s;
 }
 
 .tabcontent {
@@ -41,7 +43,8 @@ body, html {
   height: 190%;
 }
 
-a { cursor: url("/poi.png"), pointer; text-decoration: none; color: yellow;}
+a { cursor: url("/poi.png"), pointer; text-decoration: none; color: yellow; transition: 0.3s;}
+a:hover { cursor: url("/poi.png"), pointer; text-decoration: none; color: orange; transition: 0.3s;}
 blockquote, iframe, #sloppy { text-align: center; margin-left: 200px; }
 #menu { background: black; background-image: radial-gradient(ellipse at bottom, red, yellow); display: flex; white-space: pre-wrap;}
 #menu a { text-decoration: none; color: white; font-family: "Microsoft YaHei", Arial, sans-serif; transition: 0.3s; background: black; background-image: radial-gradient(ellipse at center, silver, black); }
