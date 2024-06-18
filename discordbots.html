@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Discord Bots</title>
+<meta charset="UTF-8">
+<meta data-react-helmet="true" property="og:title" content="HyperWORLD">
+<style>
+body { cursor: url("/def.png"), default; text-align: center; background: indigo; color: white; font-family: "Franklin Gothic Medium", Helvetica, Arial, sans-serif; }
+a { cursor: url("/poi.png"), pointer; text-decoration: none; color: yellow;}
+blockquote, iframe, #sloppy { text-align: center; margin-left: 200px; }
+#menu { background: black; background-image: radial-gradient(ellipse at bottom, red, yellow); display: flex; white-space: pre-wrap;}
+#menu a { text-decoration: none; color: white; font-family: "Microsoft YaHei", Arial, sans-serif; transition: 0.3s; background: black; background-image: radial-gradient(ellipse at center, silver, black); }
+#menu a:active { text-decoration: none; color: white; font-family: "Microsoft YaHei", Arial, sans-serif; background: hotpink; background-image: radial-gradient(ellipse at center, black, silver); }
+#menu a:hover { text-decoration: none; color: black; font-family: "Microsoft YaHei", Arial, sans-serif; background: white; background-image: radial-gradient(ellipse at center, white, grey); }
+#sloppy {background-image: linear-gradient(45deg, #c6c8cc, #5d7af2, #44c549, #ff4546, #2e7dd0, #af70af, #38b2e1, #404040, #7e7d7f, #dde3ed, #fefd33); max-width: 500px; display: inline-flex;}
+#logo {transform: scale(1); transition: 1s; }
+// #logo:hover {transform: scaleY(0.7); }
+// #logo:active {transform: scaleY(0.5); }
+#timeBanner { background: orangered;font-family: "Papyrus", "Times New Roman", sans-serif;}
+hr { color: black; background: black; }
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: black;
+}
+
+::-webkit-scrollbar:track {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: orangered;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: orangered;
+}
+
+@keyframes rainbow {
+    0%, 100% {
+        color: yellow;
+    }
+    33% {
+        color: hotpink;
+    }
+    66% {
+        color: cyan;
+    }
+}
+
+#dvd {
+    animation: rainbow 60s linear infinite;
+	animation-direction: alternate;
+}
+
+.rainbowTest {
+    animation: rainbow2 3s linear infinite;
+	animation-direction: alternate;
+}
+
+@keyframes rainbow2 {
+    0%, 100% {
+        filter: hue-rotate(0deg);
+    }
+    33% {
+        filter: hue-rotate(180deg);
+    }
+    66% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.rainbowDvd {
+    animation: dvdAlert 3s linear infinite;
+	animation-direction: alternate;
+}
+
+@keyframes dvdAlert {
+    0%, 100% {
+        color: cyan;
+		background: blue;
+    }
+    25% {
+        color: red;
+		background: lime;
+    }
+    25% {
+        color: cyan;
+		background: blue;
+    }
+	50% {
+        color: yellow;
+		background: red;
+    }
+	75% {
+        color: cyan;
+		background: blue;
+    }
+	100% {
+        color: magenta;
+		background: hotpink;
+    }
+}
+</style>
+</head>
+<body>
+<div id="main" style="display:block;">
+<img src="logo.svg" alt="HyperWorld - The Special Final Release" width="500px" id="logo">
+<h3>A legitimate "fanbase" site from 2019 to 2024.</h3>
+<br>
+<a href="/"><h1>Home page</h1></a>
+<br>
+<p>Welcome to HyperWORLD's Discord bots page! Here is my collection where I made to troll people! And you? If you want to run the code, you will need node.js to run the Discord bot.</p>
+<p>There are the list of source code bots that are used to run. Some of them will be different!</p>
+<hr noshade>
+<p><a href="index_idle.js" download="index_idle.js">Idle selfbot</a></p>
+<p><a href="index_je.js" download="index_je.js">JEVILOGEN selfbot</a></p>
+<p><a href="index_jabbify.js" download="index_jabbify.js">Jabbot</a></p>
+<p><a href="index_davidegan.js" download="index_davidegan.js">David Egan selfbot</a></p>
+<br>
+<p>All rights reserved. HyperWORLD Server Ltd. 2019-<span id="oYear"></span>.</p>
+</div>
+<iframe src="https://ezstat.ru/2RqKe7" width="1" height="1"></iframe>
+<script>
+document.getElementById("oYear").innerHTML = new Date().getFullYear();
+
+// HYPERWORLD LOGO UPDATE 2024/01/16 21:28
+</script>
+</body>
+</html>
