@@ -33,6 +33,7 @@ body { text-align: center; color: black; background: white; font-family: Eurosti
 <option value="lowercaseEncryption">Uppercase to Lowercase Encryption (decode only)</option>
 <option value="betterHtmlEncryption">Better HTML Tags (decode only)</option>
 <option value="uniEliminatorEncryption">Unicode Eliminator (decode only)</option>
+<option value="hEncryption">Letter H converter (decode only)</option>
 </select>
 <br><br>
 <textarea style="resize:none;" cols="70" rows="15" id="languageBase">
@@ -40,7 +41,7 @@ body { text-align: center; color: black; background: white; font-family: Eurosti
 <hr noshade>
 <button onclick="encodeText()">Encode</button><button onclick="decodeText()">Decode</button>
 <hr noshade>
-<p>Tool made by IUS, started 2023/06/11, updated 2024/09/11.</p>
+<p>Tool made by IUS, started 2023/06/11, updated 2024/09/25.</p>
 </body>
 <script>
 function replaceFromText(a,b){var lc = document.getElementById("languageBase").value;lc = lc.replaceAll(a,b);document.getElementById("languageBase").value = lc;}
@@ -573,6 +574,10 @@ alert("Encoding not supported!");
 }
 
 if(document.getElementById("encryptionMode").value === "uniEliminatorEncryption"){
+alert("Encoding not supported!");
+}
+
+if(document.getElementById("encryptionMode").value === "hEncryption"){
 alert("Encoding not supported!");
 }
 }
@@ -1524,6 +1529,52 @@ replaceFromText("﹣","-");
 replaceFromText("﹦","=");
 replaceFromText("�","unknown ");
 replaceFromText("￼","object ");
+replaceFromText("№","numero sign ");
+replaceFromText("≠","not equal to ");
+replaceFromText("≈","almost equal to ");
+}
+
+if(document.getElementById("encryptionMode").value === "hEncryption"){
+replaceFromText("q","h");
+replaceFromText("Q","H");
+replaceFromText("w","h");
+replaceFromText("W","H");
+replaceFromText("r","h");
+replaceFromText("R","H");
+replaceFromText("t","h");
+replaceFromText("T","H");
+replaceFromText("y","h");
+replaceFromText("Y","H");
+replaceFromText("p","h");
+replaceFromText("P","H");
+replaceFromText("s","h");
+replaceFromText("S","H");
+replaceFromText("d","h");
+replaceFromText("D","H");
+replaceFromText("f","h");
+replaceFromText("F","H");
+replaceFromText("g","h");
+replaceFromText("G","H");
+replaceFromText("j","h");
+replaceFromText("J","H");
+replaceFromText("k","h");
+replaceFromText("K","H");
+replaceFromText("l","h");
+replaceFromText("L","H");
+replaceFromText("z","h");
+replaceFromText("Z","H");
+replaceFromText("x","h");
+replaceFromText("X","H");
+replaceFromText("c","h");
+replaceFromText("C","H");
+replaceFromText("v","h");
+replaceFromText("V","H");
+replaceFromText("b","h");
+replaceFromText("B","H");
+replaceFromText("n","h");
+replaceFromText("N","H");
+replaceFromText("m","h");
+replaceFromText("M","H");
 }
 }
 </script>
