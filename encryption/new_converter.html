@@ -34,6 +34,7 @@ body { text-align: center; color: black; background: white; font-family: Eurosti
 <option value="betterHtmlEncryption">Better HTML Tags (decode only)</option>
 <option value="uniEliminatorEncryption">Unicode Eliminator (decode only)</option>
 <option value="hEncryption">Letter H converter (decode only)</option>
+<option value="ltModeEncryption">Lithuanian Accent Encryption</option>
 </select>
 <br><br>
 <textarea style="resize:none;" cols="70" rows="15" id="languageBase">
@@ -41,7 +42,7 @@ body { text-align: center; color: black; background: white; font-family: Eurosti
 <hr noshade>
 <button onclick="encodeText()">Encode</button><button onclick="decodeText()">Decode</button>
 <hr noshade>
-<p>Tool made by IUS, started 2023/06/11, updated 2024/09/25.</p>
+<p>Tool made by IUS, started 2023/06/11, updated 2024/09/29.</p>
 </body>
 <script>
 function replaceFromText(a,b){var lc = document.getElementById("languageBase").value;lc = lc.replaceAll(a,b);document.getElementById("languageBase").value = lc;}
@@ -579,6 +580,24 @@ alert("Encoding not supported!");
 
 if(document.getElementById("encryptionMode").value === "hEncryption"){
 alert("Encoding not supported!");
+}
+
+if(document.getElementById("encryptionMode").value === "ltModeEncryption"){
+replaceFromText("zh","ž");
+replaceFromText("ch","č");
+replaceFromText("sh","š");
+replaceFromText("Zh","Ž");
+replaceFromText("Ch","Č");
+replaceFromText("Sh","Š");
+replaceFromText("ZH","Ž");
+replaceFromText("CH","Č");
+replaceFromText("SH","Š");
+replaceFromText("ie","ė");
+replaceFromText("Ie","Ė");
+replaceFromText("IE","Ė");
+replaceFromText("...","…");
+replaceFromText('"','”');
+replaceFromText("'","‘");
 }
 }
 
@@ -1532,6 +1551,108 @@ replaceFromText("￼","object ");
 replaceFromText("№","numero sign ");
 replaceFromText("≠","not equal to ");
 replaceFromText("≈","almost equal to ");
+replaceFromText("…","...");
+replaceFromText('“','"');
+replaceFromText('„','"');
+replaceFromText("ą","a");
+replaceFromText("č","ch");
+replaceFromText("ę","e");
+replaceFromText("ė","ie");
+replaceFromText("į","i");
+replaceFromText("š","sh");
+replaceFromText("ų","u");
+replaceFromText("ū","u");
+replaceFromText("ž","zh");
+replaceFromText("Ą","A");
+replaceFromText("Č","CH");
+replaceFromText("Ę","E");
+replaceFromText("Ė","IE");
+replaceFromText("Į","I");
+replaceFromText("Š","SH");
+replaceFromText("Ų","U");
+replaceFromText("Ū","U");
+replaceFromText("Ž","ZH");
+replaceFromText("‘","'");
+replaceFromText('”','"');
+replaceFromText("◕","O");
+replaceFromText("Ǆ","DZH");
+replaceFromText("ǅ","Dzh");
+replaceFromText("ǆ","dzh");
+replaceFromText("Ǉ","LJ");
+replaceFromText("ǉ","lj");
+replaceFromText("ǋ","Nj");
+replaceFromText("Ǌ","NJ");
+replaceFromText("ǌ","nj");
+replaceFromText("Ǳ","DZ");
+replaceFromText("ǲ","Dz");
+replaceFromText("ǳ","dz");
+replaceFromText("ʘ","boobs ");
+replaceFromText("ʒ","3");
+replaceFromText("ʍ","M");
+replaceFromText("ʏ","y");
+replaceFromText("ʎ","y");
+replaceFromText("λ","lambda ");
+replaceFromText("ʜ","H");
+replaceFromText("ʛ","G");
+replaceFromText("ʚ","e");
+replaceFromText("ʙ","B");
+replaceFromText("ʣ","dz");
+replaceFromText("ʤ","d3");
+replaceFromText("ʥ","d3_");
+replaceFromText("ʦ","ts");
+replaceFromText("ʧ","tf");
+replaceFromText("ʨ","t6");
+replaceFromText("ʩ","fn");
+replaceFromText("ʪ","ls");
+replaceFromText("ʫ","lz");
+replaceFromText("ʬ","ww");
+replaceFromText("￹","IAA");
+replaceFromText("￺","IAS");
+replaceFromText("׀","|");
+replaceFromText("א","alef ");
+replaceFromText("ב","bet ");
+replaceFromText("ג","gimel ");
+replaceFromText("ד","dalet ");
+replaceFromText("ה","he ");
+replaceFromText("ו","vav ");
+replaceFromText("ז","zayin ");
+replaceFromText("ח","het ");
+replaceFromText("ט","tet ");
+replaceFromText("י","yod ");
+replaceFromText("ך","kaf ");
+replaceFromText("כ","kaf ");
+replaceFromText("ל","lamed ");
+replaceFromText("ם","mem ");
+replaceFromText("מ","mem ");
+replaceFromText("ן","nun ");
+replaceFromText("ׯ","yod ");
+replaceFromText("״",'"');
+replaceFromText("׳","'");
+replaceFromText("ײ",'"');
+replaceFromText("ױ",'"');
+replaceFromText("װ",'"');
+replaceFromText("נ","nun ");
+replaceFromText("ס","samekh ");
+replaceFromText("ע","ayin ");
+replaceFromText("ף","pe ");
+replaceFromText("פ","pe ");
+replaceFromText("ץ","tsadi ");
+replaceFromText("צ","tsadi ");
+replaceFromText("ק","qof ");
+replaceFromText("ר","resh ");
+replaceFromText("ש","shin ");
+replaceFromText("ת","tav ");
+replaceFromText("֍","right eternity sign ");
+replaceFromText("֎","left eternity sign ");
+replaceFromText("֏","dram ");
+replaceFromText("։",":");
+replaceFromText("֊","-");
+replaceFromText("՚","'");
+replaceFromText("ՙ","'");
+replaceFromText("՛","'");
+replaceFromText("՜","!");
+replaceFromText("՝",",");
+replaceFromText("՞","?");
 }
 
 if(document.getElementById("encryptionMode").value === "hEncryption"){
@@ -1575,6 +1696,20 @@ replaceFromText("n","h");
 replaceFromText("N","H");
 replaceFromText("m","h");
 replaceFromText("M","H");
+}
+
+if(document.getElementById("encryptionMode").value === "ltModeEncryption"){
+replaceFromText("ž","zh");
+replaceFromText("č","ch");
+replaceFromText("š","sh");
+replaceFromText("Ž","Zh");
+replaceFromText("Č","Ch");
+replaceFromText("Š","Sh");
+replaceFromText("ė","ie");
+replaceFromText("Ė","Ie");
+replaceFromText("…","...");
+replaceFromText('”','"');
+replaceFromText("‘","'");
 }
 }
 </script>
