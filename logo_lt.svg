@@ -1,0 +1,94 @@
+<svg version="1.1" width="278" height="70" viewBox="-1 -1 278 70" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="grad_1" y2="1">
+      <stop offset="0" stop-color="#003FFF" stop-opacity="1"/>
+      <stop offset="1" stop-color="#00FFFF" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="grad_2" y2="1">
+      <stop offset="0" stop-color="#FF0000" stop-opacity="1"/>
+      <stop offset="1" stop-color="#00FFFF" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="grad_3" y2="1">
+      <stop offset="0" stop-color="#FF0000" stop-opacity="1"/>
+      <stop offset="1" stop-color="#00FFFF" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="grad_4" y2="1">
+      <stop offset="0" stop-color="#FF0000" stop-opacity="1"/>
+      <stop offset="1" stop-color="#00FFFF" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="grad_5" y2="1">
+      <stop offset="0" stop-color="#FF0000" stop-opacity="1"/>
+      <stop offset="1" stop-color="#00FFFF" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="grad_6" y2="1">
+      <stop offset="0" stop-color="#FF0000" stop-opacity="1"/>
+      <stop offset="1" stop-color="#00FFFF" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="grad_7" y2="1">
+      <stop offset="0" stop-color="#FF0000" stop-opacity="1"/>
+      <stop offset="1" stop-color="#00FFFF" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="grad_8" y2="1">
+      <stop offset="0" stop-color="#FF0000" stop-opacity="1"/>
+      <stop offset="1" stop-color="#00FFFF" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="grad_9" y2="1">
+      <stop offset="0" stop-color="#FF0000" stop-opacity="1"/>
+      <stop offset="1" stop-color="#00FFFF" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="grad_10" y2="1">
+      <stop offset="0" stop-color="#FF0000" stop-opacity="1"/>
+      <stop offset="1" stop-color="#00FFFF" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="grad_11" y2="1">
+      <stop offset="0" stop-color="#FF0000" stop-opacity="1"/>
+      <stop offset="1" stop-color="#00FFFF" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="grad_12" y2="1">
+      <stop offset="0" stop-color="#FF0000" stop-opacity="1"/>
+      <stop offset="1" stop-color="#00FFFF" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="grad_13" y2="1">
+      <stop offset="0" stop-color="#FF0000" stop-opacity="1"/>
+      <stop offset="1" stop-color="#00FFFF" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="grad_14" y2="1">
+      <stop offset="0" stop-color="#FF0000" stop-opacity="1"/>
+      <stop offset="1" stop-color="#00FFFF" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="grad_15" y2="1">
+      <stop offset="0" stop-color="#FF0000" stop-opacity="1"/>
+      <stop offset="1" stop-color="#00FFFF" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="grad_16" y2="1">
+      <stop offset="0" stop-color="#FF0000" stop-opacity="1"/>
+      <stop offset="1" stop-color="#00FFFF" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+  <!-- Exported by Scratch - http://scratch.mit.edu/ -->
+  <g id="ID0.02890854747965932" transform="matrix(1, 0, 0, 1, -105, -146)">
+    <path id="ID0.7208182071335614" fill="url(#grad_1)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M 171.500 150 C 169.817 155.267 171.488 161.371 172.250 167 C 173.575 176.206 173.168 186.364 177.750 194.500 C 179.798 198.129 185.327 197.939 189.250 198 C 200.271 198.193 211.462 197.522 222 195.250 C 225.770 194.437 230.945 192.815 231.750 189 C 234.039 179.782 230.993 170.077 230.250 160.500 C 229.869 155.578 231.598 149.936 228.750 145.750 C 227.231 143.525 222.057 144.405 220.750 146.750 C 218.658 150.507 221.172 155.361 221 159.750 C 220.672 167.860 223.219 177.099 219.250 184.250 C 216.642 188.950 209.624 189.949 204.250 190.500 C 198.798 190.822 191.930 190.734 188.250 186.750 C 183.282 181.374 183.562 173.013 181.750 165.750 C 180.309 159.985 181.550 153.192 178.250 148.250 C 176.920 146.261 172.208 147.789 171.500 150 Z " transform="matrix(0.7929793000221252, 0, 0, 0.7929793000221252, -29.3, 34.65)"/>
+    <path id="ID0.22094288188964128" fill="url(#grad_2)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M 256.600 155.250 L 248.650 155.300 L 249.550 194.900 L 256.850 194.750 L 257.550 178.750 L 264.650 178.850 L 265.100 194.600 L 272.600 194.650 L 271.250 155.500 L 265.100 155.350 L 264.900 167.300 L 256.700 167.650 L 256.600 155.250 Z " transform="matrix(1, 0, 0, 1, -83.6, -8.25)"/>
+    <path id="ID0.4784581628628075" fill="url(#grad_3)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M 306.250 219.750 L 301.750 219.750 L 301 175.250 L 318.250 175.250 L 315.700 190.450 L 307 191.750 L 306.250 219.750 Z " transform="matrix(1, 0, 0, 1, -97, -5.3)"/>
+    <path id="ID0.36233857460319996" fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M 305.750 182 L 305.750 186.750 L 311.250 186.250 L 310.750 181.250 L 305.750 182 Z " transform="matrix(1, 0, 0, 1, -97, -5.55)"/>
+    <path id="ID0.20162828778848052" fill="url(#grad_4)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M 339 171.500 L 337.750 175.500 L 331 175.250 L 330.500 181.250 L 333.500 181 L 333.750 185 L 330 184.500 L 329.250 189 L 335.250 189.250 L 336 193.250 L 325.350 193.250 L 326 174.750 L 326.500 170.500 L 339 171.500 Z " transform="matrix(1, 0, 0, 1, -99.9, -6.9)"/>
+    <path id="ID0.8206952442415059" fill="url(#grad_5)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M 347.500 192.250 L 344.700 192.350 L 344 171 L 356.250 171.250 L 350.750 178.750 L 347.500 178.750 L 358.550 192.250 L 354.050 192.250 L 347.500 183.500 L 347.500 192.250 Z " transform="matrix(1, 0, 0, 1, -102.85, -5.8)"/>
+    <path id="ID0.6867356770671904" fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M 350.950 175.150 L 350.800 174.850 L 347.500 173.750 L 347.500 176.750 L 350.950 175.150 Z " transform="matrix(1, 0, 0, 1, -102.85, -5.8)"/>
+    <path id="ID0.24247434362769127" fill="#6ADE94" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M 132.750 164.850 C 133.039 162.115 137.022 159.585 139.750 160.200 C 143.786 161.260 146.702 165.278 148.900 168.850 C 149.497 169.820 146.035 170.206 146.500 171.200 C 147.590 173.658 150.954 174.386 152.400 176.600 C 153.906 178.907 156.455 183.398 155.150 184.350 C 153.630 185.523 149.286 182.461 146.750 180.850 C 144.602 179.485 143.413 176.764 141.100 175.700 C 140.059 175.221 138.589 177.754 137.900 176.850 C 135.219 173.334 132.294 169.174 132.750 164.850 Z " transform="matrix(1, 0, 0, 1, -14, -5)"/>
+    <path id="ID0.41077139833942056" fill="none" stroke="#94DEAF" stroke-width="1" stroke-linecap="round" d="M 136.050 162.350 C 136.050 162.350 137.297 161.397 137.950 161.400 C 139.191 161.407 140.473 161.831 141.550 162.350 C 142.480 162.799 143.288 163.531 144 164.250 C 145.115 165.375 147.050 167.900 147.050 167.900 " transform="matrix(1, 0, 0, 1, -14, -5)"/>
+    <path id="ID0.6170952012762427" fill="url(#grad_6)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M 271.350 191.850 L 288.750 191.250 L 290.500 203.750 L 279.500 204.500 L 279.350 228.650 L 273.350 228.650 L 271.350 191.850 Z " transform="matrix(1, 0, 0, 1, -13.5, -41.5)"/>
+    <path id="ID0.9567721947096288" fill="url(#grad_7)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M 293.950 228.250 L 294.450 213.250 L 300.800 213.650 L 302.250 208.750 L 307.750 209.250 L 307.750 227.750 L 293.950 228.250 Z " transform="matrix(1, 0, 0, 1, -21.45, -41)"/>
+    <path id="ID0.9134338609874249" fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M 298.550 219.500 L 298.700 224.150 L 304.250 224 L 303.250 219 L 298.550 219.500 Z " transform="matrix(1, 0, 0, 1, -21.2, -41.5)"/>
+    <path id="ID0.9567721947096288" fill="url(#grad_8)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M 294.600 228.200 L 294.700 213.300 L 300.750 212.750 L 301.600 207.200 L 307.750 209.250 L 307.850 228.050 L 294.600 228.200 Z " transform="matrix(1, 0, 0, 1, 17.5, -41.05)"/>
+    <path id="ID0.9134338609874249" fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M 299.400 217.550 L 299.750 224.500 L 303.800 223.950 L 303.550 219.150 L 299.400 217.550 Z " transform="matrix(1, 0, 0, 1, 16.75, -41.3)"/>
+    <path id="ID0.6951164733618498" fill="url(#grad_9)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M 354.250 209.500 L 351 209.650 L 349.500 228.150 L 365.400 227.850 L 366.750 210.750 L 363 210.750 L 361.800 222.850 L 354.500 223.250 L 354.250 209.500 Z " transform="matrix(1, 0, 0, 1, -21.25, -41)"/>
+    <path id="ID0.6755461539141834" fill="url(#grad_10)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M 371.500 228.650 L 370.750 199.750 L 375.750 199.500 L 374.200 228.650 L 371.500 228.650 Z " transform="matrix(1, 0, 0, 1, -22.75, -41.55)"/>
+    <path id="ID0.5975857032462955" fill="url(#grad_11)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M 380.500 228.150 L 377.200 228.250 L 377.350 213.900 L 380.700 214.150 L 380.500 228.150 Z " transform="matrix(1, 0, 0, 1, -21.75, -41.4)"/>
+    <path id="ID0.24568836158141494" fill="url(#grad_12)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M 377.400 210.150 L 380.500 210.400 L 380.800 206.650 L 377.800 207.400 L 377.400 210.150 Z " transform="matrix(1, 0, 0, 1, -21.5, -40.9)"/>
+    <path id="ID0.1475740121677518" fill="#FFFFFF" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M 280.850 195.750 L 276.750 195.350 L 276.850 200.850 L 282.850 200.250 L 280.850 195.750 Z " transform="matrix(1, 0, 0, 1, -13.5, -41.5)"/>
+    <path id="ID0.606553265824914" fill="url(#grad_13)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M 404.300 204.050 L 389 206 L 390.400 215.400 L 399.550 216.050 L 399.900 220.300 L 390.750 222.500 L 391.500 228 L 408.050 227.300 L 404.750 212 L 398.200 212.200 L 397.200 209.300 L 405 208 L 404.300 204.050 Z " transform="matrix(1, 0, 0, 1, -26.75, -41.15)"/>
+    <path id="ID0.606553265824914" fill="url(#grad_14)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M 403.900 203.450 L 389 206 L 390.900 216.300 L 398.800 215.550 L 399.500 220.300 L 390.750 222.500 L 391.500 228 L 409 227.500 L 404.750 212 L 394 211.050 L 393.500 208.450 L 405 208 L 403.900 203.450 Z " transform="matrix(1, 0, 0, 1, -99.15, -40.3)"/>
+    <path id="ID0.9471931541338563" fill="url(#grad_15)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M 198.300 165.750 L 198.800 186.750 L 203.500 186.650 L 202.600 166.250 L 199 165.750 Z " transform="matrix(1, 0, 0, 1, -3, -1)"/>
+    <path id="ID0.7568241893313825" fill="url(#grad_16)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M 202.300 161.500 L 198.300 161.500 L 197.600 157.500 L 201.800 157.350 L 202.600 161.500 Z " transform="matrix(1, 0, 0, 1, -3, -1)"/>
+  </g>
+</svg>
