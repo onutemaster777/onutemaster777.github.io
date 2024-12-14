@@ -1,282 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>HyperWorld - The Special Final Release</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Goodbye</title>
 <meta charset="UTF-8">
-<meta name="theme-color" content="red">
-<meta data-react-helmet="true" property="og:title" content="HyperWORLD">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <style>
-* {box-sizing: border-box}
-
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: "Franklin Gothic Medium", "Microsoft YaHei", Arial, sans-serif;
-  text-align: center;
-  cursor: url("/def.png"), default;
-  background: indigo;
-}
-
-.tablink {
-  background-color: #555;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 10px 1px;
-  font-size: 10px;
-  width: 25%;
-  transition: 0.3s;
-}
-
-.tablink:hover {
-  background-color: #777;
-  transition: 0.3s;
-}
-
-.tabcontent {
-  color: white;
-  display: none;
-  padding: 35px 15px;
-  height: 190%;
-}
-
-a { cursor: url("/poi.png"), pointer; text-decoration: none; color: yellow; transition: 0.3s;}
-a:hover { cursor: url("/poi.png"), pointer; text-decoration: none; color: orange; transition: 0.3s;}
-blockquote, iframe, #sloppy { text-align: center; margin-left: 200px; }
-#menu { background: black; background-image: radial-gradient(ellipse at bottom, red, yellow); display: flex; white-space: pre-wrap;}
-#menu a { text-decoration: none; color: white; font-family: "Microsoft YaHei", Arial, sans-serif; transition: 0.3s; background: black; background-image: radial-gradient(ellipse at center, silver, black); }
-#menu a:active { text-decoration: none; color: white; font-family: "Microsoft YaHei", Arial, sans-serif; background: hotpink; background-image: radial-gradient(ellipse at center, black, silver); }
-#menu a:hover { text-decoration: none; color: black; font-family: "Microsoft YaHei", Arial, sans-serif; background: white; background-image: radial-gradient(ellipse at center, white, grey); }
-#sloppy {background-image: linear-gradient(45deg, #c6c8cc, #5d7af2, #44c549, #ff4546, #2e7dd0, #af70af, #38b2e1, #404040, #7e7d7f, #dde3ed, #fefd33); max-width: 500px; display: inline-flex;}
-#logo {transform: scale(1); transition: 1s; }
-// #logo:hover {transform: scaleY(0.7); }
-// #logo:active {transform: scaleY(0.5); }
-hr { color: black; background: black; }
-
-::-webkit-scrollbar {
-  width: 10px;
-  background: black;
-}
-
-::-webkit-scrollbar:track {
-  width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: hotpink;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: hotpink;
-}
-
-@keyframes rainbow {
-    0%, 100% {
-        color: yellow;
-    }
-    33% {
-        color: hotpink;
-    }
-    66% {
-        color: cyan;
-    }
-}
-
-#dvd {
-    animation: rainbow 60s linear infinite;
-	animation-direction: alternate;
-}
-
-.rainbowTest {
-    animation: rainbow2 3s linear infinite;
-	animation-direction: alternate;
-}
-
-@keyframes rainbow2 {
-    0%, 100% {
-        filter: hue-rotate(0deg);
-    }
-    33% {
-        filter: hue-rotate(180deg);
-    }
-    66% {
-        filter: hue-rotate(360deg);
-    }
-}
-
-.rainbowDvd {
-    animation: dvdAlert 3s linear infinite;
-	animation-direction: alternate;
-}
-
-@keyframes dvdAlert {
-    0%, 100% {
-        color: cyan;
-		background: blue;
-    }
-    25% {
-        color: red;
-		background: lime;
-    }
-    25% {
-        color: cyan;
-		background: blue;
-    }
-	50% {
-        color: yellow;
-		background: red;
-    }
-	75% {
-        color: cyan;
-		background: blue;
-    }
-	100% {
-        color: magenta;
-		background: hotpink;
-    }
-}
+body { text-align: center; font-family: Tahoma, Arial, sans-serif; }
+.credits {text-align: right;}
+.dialog {display: inline-block; padding: 4px 4px; background: white; max-width: 100%;}
+#main {justify-content: center; align-items: center; width: 800px;}
 </style>
 </head>
 <body>
-<div id="warning" style="display:none;">
-<p>Redirecting...</p>
-</div>
-<div id="main" style="display:block;">
-<button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen" href="#home"><h2>HOME</h2></button>
-<button class="tablink" onclick="openPage('Story', this, 'royalblue')" href="#history"><h2>STORY</h2></button>
-<button class="tablink" onclick="openPage('Links', this, 'tomato')" href="#links"><h2>LINKS</h2></button>
-<button class="tablink" onclick="openPage('About', this, 'forestgreen')" href="#about"><h2>ABOUT</h2></button>
-
-<div id="Home" class="tabcontent">
+<div id="main" class="dialog">
+<img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHdpZHRoPSIyNzIiIGhlaWdodD0iNzEiIHZpZXdCb3g9Ii0xIC0xIDI3MiA3MSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgPCEtLSBFeHBvcnRlZCBieSBTY3JhdGNoIC0gaHR0cDovL3NjcmF0Y2gubWl0LmVkdS8gLS0+CiAgPGcgaWQ9IklEMC45MzIwNTg4MDkzMjUwOTkiIHRyYW5zZm9ybT0ibWF0cml4KDEsIDAsIDAsIDEsIC0xMDUsIC0xNDYpIj4KICAgIDxwYXRoIGlkPSJJRDAuNzIwODE4MjA3MTMzNTYxNCIgZmlsbD0iIzdGN0Y3RiIgc3Ryb2tlPSIjMDAwMDAwIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgZD0iTSAxNzEuNTAwIDE1MCBDIDE2OS44MTcgMTU1LjI2NyAxNzEuNDg4IDE2MS4zNzEgMTcyLjI1MCAxNjcgQyAxNzMuNTc1IDE3Ni4yMDYgMTczLjE2OCAxODYuMzY0IDE3Ny43NTAgMTk0LjUwMCBDIDE3OS43OTggMTk4LjEyOSAxODUuMzI3IDE5Ny45MzkgMTg5LjI1MCAxOTggQyAyMDAuMjcxIDE5OC4xOTMgMjExLjQ2MiAxOTcuNTIyIDIyMiAxOTUuMjUwIEMgMjI1Ljc3MCAxOTQuNDM3IDIzMC45NDUgMTkyLjgxNSAyMzEuNzUwIDE4OSBDIDIzNC4wMzkgMTc5Ljc4MiAyMzAuOTkzIDE3MC4wNzcgMjMwLjI1MCAxNjAuNTAwIEMgMjI5Ljg2OSAxNTUuNTc4IDIzMS41OTggMTQ5LjkzNiAyMjguNzUwIDE0NS43NTAgQyAyMjcuMjMxIDE0My41MjUgMjIyLjA1NyAxNDQuNDA1IDIyMC43NTAgMTQ2Ljc1MCBDIDIxOC42NTggMTUwLjUwNyAyMjEuMTcyIDE1NS4zNjEgMjIxIDE1OS43NTAgQyAyMjAuNjcyIDE2Ny44NjAgMjIzLjIxOSAxNzcuMDk5IDIxOS4yNTAgMTg0LjI1MCBDIDIxNi42NDIgMTg4Ljk1MCAyMDkuNjI0IDE4OS45NDkgMjA0LjI1MCAxOTAuNTAwIEMgMTk4Ljc5OCAxOTAuODIyIDE5MS45MzAgMTkwLjczNCAxODguMjUwIDE4Ni43NTAgQyAxODMuMjgyIDE4MS4zNzQgMTgzLjU2MiAxNzMuMDEzIDE4MS43NTAgMTY1Ljc1MCBDIDE4MC4zMDkgMTU5Ljk4NSAxODEuNTUwIDE1My4xOTIgMTc4LjI1MCAxNDguMjUwIEMgMTc2LjkyMCAxNDYuMjYxIDE3Mi4yMDggMTQ3Ljc4OSAxNzEuNTAwIDE1MCBaICIgdHJhbnNmb3JtPSJtYXRyaXgoMC43OTI5NzkzMDAwMjIxMjUyLCAwLCAwLCAwLjc5Mjk3OTMwMDAyMjEyNTIsIC0yOS4zLCAzNC42NSkiLz4KICAgIDxwYXRoIGlkPSJJRDAuMjIwOTQyODgxODg5NjQxMjgiIGZpbGw9IiM3RjdGN0YiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIGQ9Ik0gMjU2LjYwMCAxNTUuMjUwIEwgMjQ4LjY1MCAxNTUuMzAwIEwgMjQ5LjU1MCAxOTQuOTAwIEwgMjU2Ljg1MCAxOTQuNzUwIEwgMjU3LjU1MCAxNzguNzUwIEwgMjY0LjY1MCAxNzguODUwIEwgMjY1LjEwMCAxOTQuNjAwIEwgMjcyLjYwMCAxOTQuNjUwIEwgMjcxLjI1MCAxNTUuNTAwIEwgMjY1LjEwMCAxNTUuMzUwIEwgMjY0LjkwMCAxNjcuMzAwIEwgMjU2LjcwMCAxNjcuNjUwIEwgMjU2LjYwMCAxNTUuMjUwIFogIiB0cmFuc2Zvcm09Im1hdHJpeCgxLCAwLCAwLCAxLCAtODMuNiwgLTguMjUpIi8+CiAgICA8cGF0aCBpZD0iSUQwLjQ3ODQ1ODE2Mjg2MjgwNzUiIGZpbGw9IiM3RjdGN0YiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIGQ9Ik0gMzA2LjI1MCAyMTkuNzUwIEwgMzAxLjc1MCAyMTkuNzUwIEwgMzAxIDE3NS4yNTAgTCAzMTguMjUwIDE3NS4yNTAgTCAzMTUuNzAwIDE5MC40NTAgTCAzMDcgMTkxLjc1MCBMIDMwNi4yNTAgMjE5Ljc1MCBaICIgdHJhbnNmb3JtPSJtYXRyaXgoMSwgMCwgMCwgMSwgLTg0LjI1LCAtNC4wNSkiLz4KICAgIDxwYXRoIGlkPSJJRDAuMzYyMzM4NTc0NjAzMTk5OTYiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIGQ9Ik0gMzA1Ljc1MCAxODIgTCAzMDUuNzUwIDE4Ni43NTAgTCAzMTEuMjUwIDE4Ni4yNTAgTCAzMTAuNzUwIDE4MS4yNTAgTCAzMDUuNzUwIDE4MiBaICIgdHJhbnNmb3JtPSJtYXRyaXgoMSwgMCwgMCwgMSwgLTg0LjI1LCAtNC4wNSkiLz4KICAgIDxwYXRoIGlkPSJJRDAuMjAxNjI4Mjg3Nzg4NDgwNTIiIGZpbGw9IiM3RjdGN0YiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIGQ9Ik0gMzM5IDE3MS41MDAgTCAzMzcuNzUwIDE3NS41MDAgTCAzMzEgMTc1LjI1MCBMIDMzMC41MDAgMTgxLjI1MCBMIDMzMy41MDAgMTgxIEwgMzMzLjc1MCAxODUgTCAzMzAgMTg0LjUwMCBMIDMyOS4yNTAgMTg5IEwgMzM1LjI1MCAxODkuMjUwIEwgMzM2IDE5My4yNTAgTCAzMjUuMzUwIDE5My4yNTAgTCAzMjYgMTc0Ljc1MCBMIDMyNi41MDAgMTcwLjUwMCBMIDMzOSAxNzEuNTAwIFogIiB0cmFuc2Zvcm09Im1hdHJpeCgxLCAwLCAwLCAxLCAtODcuNCwgLTYuOSkiLz4KICAgIDxwYXRoIGlkPSJJRDAuODIwNjk1MjQ0MjQxNTA1OSIgZmlsbD0iIzdGN0Y3RiIgc3Ryb2tlPSIjMDAwMDAwIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgZD0iTSAzNDcuNTAwIDE5Mi4yNTAgTCAzNDQuNzAwIDE5Mi4zNTAgTCAzNDQgMTcxIEwgMzU2LjI1MCAxNzEuMjUwIEwgMzUwLjc1MCAxNzguNzUwIEwgMzQ3LjUwMCAxNzguNzUwIEwgMzU4LjU1MCAxOTIuMjUwIEwgMzU0LjA1MCAxOTIuMjUwIEwgMzQ3LjUwMCAxODMuNTAwIEwgMzQ3LjUwMCAxOTIuMjUwIFogIiB0cmFuc2Zvcm09Im1hdHJpeCgxLCAwLCAwLCAxLCAtOTAuMzUsIC01LjgpIi8+CiAgICA8cGF0aCBpZD0iSUQwLjY4NjczNTY3NzA2NzE5MDQiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIGQ9Ik0gMzUwLjk1MCAxNzUuMTUwIEwgMzUwLjgwMCAxNzQuODUwIEwgMzQ3LjUwMCAxNzMuNzUwIEwgMzQ3LjUwMCAxNzYuNzUwIEwgMzUwLjk1MCAxNzUuMTUwIFogIiB0cmFuc2Zvcm09Im1hdHJpeCgxLCAwLCAwLCAxLCAtOTAuMzUsIC01LjgpIi8+CiAgICA8cGF0aCBpZD0iSUQwLjM4MjAxODAzNjY3NDcwODEzIiBmaWxsPSIjN0Y3RjdGIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBkPSJNIDI4Mi4yNTAgMTk2LjIwMCBMIDI4Ni41NTAgMTg1LjIwMCBMIDI4MS41MDAgMTc0LjUwMCBMIDI4NS43NTAgMTczIEwgMjg4LjgwMCAxODEgTCAyOTMgMTc0LjcwMCBMIDI5NS4yNTAgMTc3LjUwMCBMIDI4NiAxOTguNzAwIEwgMjgyLjUwMCAxOTYuNTAwIFogIiB0cmFuc2Zvcm09Im1hdHJpeCgxLCAwLCAwLCAxLCAtODMuODUsIC0yLjQpIi8+CiAgICA8cGF0aCBpZD0iSUQwLjk5Nzc4NDAxNTcyMjU3MjgiIGZpbGw9IiM3RjdGN0YiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIGQ9Ik0gMzA2LjQ1MCAxODkuMTAwIEwgMzE3LjI1MCAxNzguMjUwIEwgMzI2LjQ1MCAxODkuMTAwIEwgMzM5LjcwMCAxNTguNjAwIEwgMzM0LjQwMCAxNTUuOTAwIEwgMzIzLjI1MCAxNzIuNTAwIEwgMzE5LjI1MCAxNjMuMjUwIEwgMzExLjkwMCAxNzIuNTAwIEwgMzA5IDE1NiBMIDI5OC43NTAgMTU2LjI1MCBMIDMwNi40NTAgMTg5LjEwMCBaICIgdHJhbnNmb3JtPSJtYXRyaXgoMSwgMCwgMCwgMSwgLTMwLjU1LCAtMy4wNSkiLz4KICAgIDxwYXRoIGlkPSJJRDAuNjkyNzk0NzIwMTc2NjA3NCIgZmlsbD0iIzdGN0Y3RiIgc3Ryb2tlPSIjMDAwMDAwIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgZD0iTSAzNDQuNTAwIDE3OS41MDAgTCAzNDkuNTAwIDE3My43NTAgTCAzNTkuNzUwIDE3My41MDAgTCAzNjQuMjUwIDE3OC43NTAgTCAzNjQgMTg1LjUwMCBMIDM1OSAxOTAuNTAwIEwgMzUwLjI1MCAxOTAuNTAwIEwgMzQ1LjI1MCAxODYuNTAwIEwgMzQ0Ljc1MCAxODAuMjUwIFogIiB0cmFuc2Zvcm09Im1hdHJpeCgxLCAwLCAwLCAxLCAtMzkuMTUsIC00LjI1KSIvPgogICAgPHBhdGggaWQ9IklEMC45MTE2NzA1MDM2NzIyMTI0IiBmaWxsPSIjRkZGRkZGIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBkPSJNIDM1MC45MDAgMTc5Ljg1MCBMIDM1NyAxODAgTCAzNTYuNTAwIDE4NS4yNTAgTCAzNTEuNjAwIDE4NC43NTAgTCAzNTAuOTAwIDE3OS44NTAgWiAiIHRyYW5zZm9ybT0ibWF0cml4KDEsIDAsIDAsIDEsIC0zOS4xNSwgLTQuMjUpIi8+CiAgICA8cGF0aCBpZD0iSUQwLjQ1MjI5OTQxNjUzMDg3NzM1IiBmaWxsPSIjN0Y3RjdGIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBkPSJNIDM2OC4yNTAgMTczLjc1MCBMIDM2NC4yNTAgMTczLjc1MCBMIDM2My41NTAgMTkxLjYwMCBMIDM2Ny44NTAgMTkxLjU1MCBMIDM2OC4yNTAgMTgwIEwgMzc1LjI1MCAxNzcuNzUwIEwgMzc0Ljc1MCAxNzUuNzUwIEwgMzY4Ljc1MCAxNzYuMjUwIEwgMzY4LjI1MCAxNzMuNzUwIFogIiB0cmFuc2Zvcm09Im1hdHJpeCgxLCAwLCAwLCAxLCAtMzQuMTUsIC01LjMpIi8+CiAgICA8cGF0aCBpZD0iSUQwLjc4NjEyMTc5MDI5NzMyOTQiIGZpbGw9IiM3RjdGN0YiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIGQ9Ik0gMzgyLjQwMCAxOTEuNzAwIEwgMzgwLjc1MCAxNTQgTCAzODYuNzUwIDE1My41MDAgTCAzODYuMTUwIDE5MS42NTAgTCAzODIuNDAwIDE5MS43MDAgWiAiIHRyYW5zZm9ybT0ibWF0cml4KDEsIDAsIDAsIDEsIC0zNi45LCAtNS40KSIvPgogICAgPHBhdGggaWQ9IklEMC42MjAzNTQ3NzAyMTcwOTA4IiBmaWxsPSIjN0Y3RjdGIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBkPSJNIDM5My43NTAgMTkxLjY1MCBMIDM5My43NTAgMTg0LjUwMCBMIDM5Ny41MDAgMTc5LjI1MCBMIDQwOC41MDAgMTc5LjI1MCBMIDQwOC4yNTAgMTUzIEwgNDE1LjI1MCAxNTIuNTAwIEwgNDE0LjI1MCAxNzguMjUwIEwgNDE0LjIwMCAxOTEuNTUwIEwgMzkzLjc1MCAxOTEuNjUwIFogIiB0cmFuc2Zvcm09Im1hdHJpeCgxLCAwLCAwLCAxLCAtNDAuMTUsIC01LjQpIi8+CiAgICA8cGF0aCBpZD0iSUQwLjIyNjUyMDg5MDgzNTY3MjYyIiBmaWxsPSIjRkZGRkZGIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBkPSJNIDQwOCAxODYuNzUwIEwgNDAxLjI1MCAxODMuNTAwIEwgNDAxIDE4OSBMIDQwOCAxODYuNzUwIFogIiB0cmFuc2Zvcm09Im1hdHJpeCgxLCAwLCAwLCAxLCAtNDAuMTUsIC01LjQpIi8+CiAgICA8cGF0aCBpZD0iSUQwLjI0MjQ3NDM0MzYyNzY5MTI3IiBmaWxsPSIjN0Y3RjdGIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBkPSJNIDEzMi43NTAgMTY0Ljg1MCBDIDEzMy4wMzkgMTYyLjExNSAxMzcuMDIyIDE1OS41ODUgMTM5Ljc1MCAxNjAuMjAwIEMgMTQzLjc4NiAxNjEuMjYwIDE0Ni43MDIgMTY1LjI3OCAxNDguOTAwIDE2OC44NTAgQyAxNDkuNDk3IDE2OS44MjAgMTQ2LjAzNSAxNzAuMjA2IDE0Ni41MDAgMTcxLjIwMCBDIDE0Ny41OTAgMTczLjY1OCAxNTAuOTU0IDE3NC4zODYgMTUyLjQwMCAxNzYuNjAwIEMgMTUzLjkwNiAxNzguOTA3IDE1Ni40NTUgMTgzLjM5OCAxNTUuMTUwIDE4NC4zNTAgQyAxNTMuNjMwIDE4NS41MjMgMTQ5LjI4NiAxODIuNDYxIDE0Ni43NTAgMTgwLjg1MCBDIDE0NC42MDIgMTc5LjQ4NSAxNDMuNDEzIDE3Ni43NjQgMTQxLjEwMCAxNzUuNzAwIEMgMTQwLjA1OSAxNzUuMjIxIDEzOC41ODkgMTc3Ljc1NCAxMzcuOTAwIDE3Ni44NTAgQyAxMzUuMjE5IDE3My4zMzQgMTMyLjI5NCAxNjkuMTc0IDEzMi43NTAgMTY0Ljg1MCBaICIgdHJhbnNmb3JtPSJtYXRyaXgoMSwgMCwgMCwgMSwgLTE0LCAtNSkiLz4KICAgIDxwYXRoIGlkPSJJRDAuNDEwNzcxMzk4MzM5NDIwNTYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzdGN0Y3RiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIGQ9Ik0gMTM2LjA1MCAxNjIuMzUwIEMgMTM2LjA1MCAxNjIuMzUwIDEzNy4yOTcgMTYxLjM5NyAxMzcuOTUwIDE2MS40MDAgQyAxMzkuMTkxIDE2MS40MDcgMTQwLjQ3MyAxNjEuODMxIDE0MS41NTAgMTYyLjM1MCBDIDE0Mi40ODAgMTYyLjc5OSAxNDMuMjg4IDE2My41MzEgMTQ0IDE2NC4yNTAgQyAxNDUuMTE1IDE2NS4zNzUgMTQ3LjA1MCAxNjcuOTAwIDE0Ny4wNTAgMTY3LjkwMCAiIHRyYW5zZm9ybT0ibWF0cml4KDEsIDAsIDAsIDEsIC0xNCwgLTUpIi8+CiAgPC9nPgo8L3N2Zz4=" class="dialogImage" width="400px">
+<br>
+<h1>It's time to move on.</h1>
+<p>As of December 31st, 2024, the website has been permanently shut down for good, it will never come back and look like before. We know we did a lot of things on the internet with most haters who don't exactly like what's going on with us, so we all admit one of our wrongdoings, but it's hard to say goodbye to one of the beautiful sites that we have ever made for fun.</p>
+<h2>The worst things I have ever done</h2>
+<p>Oh well, do I have to explain all over again? Look down for the evidence I have made and I don't want to waste my time for writing the same things I have did and I do not want to talk about anyone who cut ties with me or I'm relating to anything. And who are watching this, I still HAD it. I still HAD the chance to talk about it. I still HAVE the energy to talk about my past because without my past, I could not remember what happened then like in 2021 or some shit I have did without them before they get around me a lot which is totally bad, and I can't actually remember the year of 2016 for things I have did because I only know what really happened in 2017 before I abandoned my YouTube channel for 6 years before I brought my old account back in 2023. That was super unfair. The fair is do I actually have to show you what am I doing? Match three games are surprisingly awesome, don't you? Bejeweled 3 is only the game I need and I was highly obsessed with Bejeweled series and made me a lot of improvement. And so let's not talk about the gem-matching game made by PopCap Games or GameHouse, should I say. Why would you guys have to be like that? Go back to 2018 and act like this now, wouldn't you change that as a 12 year old kid who talks nonsense and do nothing at all? Why do people hate my past? There is nothing wrong about my past unless if you manipulated my friends. I just really wanted to have fun and that's all. There was only one user on Discord who saw me in the group chat or inside of normal Discord server who still knows me that I was doing back in 2015 with my forbidden username that I have used for years making logo editing content and still obsessed with "class key chew poe" (or Splaat, if you know what I mean) until I finally got rid of that thing.</p>
+<p>YouTube star creators, veterans, influencers, comedians and all of my fans who helped me improve a lot better than doing the same shit thing I have made in 2021, I am really sorry for:</p>
+<ol style="font-weight: bolder; font-family: 'Segoe UI', sans-serif;">
+<li>doxxing myself including my face that I made on my computer where I created for fun.</li>
+<li>harassing lots of people on the internet and wasting their time.</li>
+<li>having a lot of shit.</li>
+<li>harassing users on Minecraft Pocket Edition content in 2017.</li>
+<li>harassing and saying the racist word to people on Google Chat (a.k.a. Hangouts) in 2018.</li>
+<li>copying HQC's profile picture to my channel which he gave MarioTheSpartan's attention to me into taking it down with Community Guidelines strikes.</li>
+<li>harassing and trolling AprilSR, Sekanor, PixelLoaf staffs on Discord in 2019.</li>
+<li>interrupting people on Discord from Bejeweled Discord server in 2019.</li>
+<li>being idiotic on logo editing community in September 2019 issued by The YTPMV Community.</li>
+<li>telling my weight.</li>
+<li>begging and making fun of OTOMAD creator TheKantapapa in 2019.</li>
+<li>being banned on BWR for many times as a kiddie in 2019 for making fun of Seamus/Siobhan/Touhou Insanity.</li>
+<li>posting naked videos out of myself without knowing them which it was the worst incident of my life in December 12th, 2019.</li>
+<li>being permanently banned on bonzi.world by Nathan Thompson in March 2020 for making fun of the owner.</li>
+<li>hosting a illegal LVM server unstoppable before I gave up which leads into leaking IP addresses and literally inviting everyone to have fun on my Discord server before I deleted it.</li>
+<li>hacking Minecraft Bedrock Edition servers.</li>
+<li>refusing to shut down BonziWORLD servers when Seamus told me so.</li>
+<li>stealing Seamus's videos on YouTube and uploading them which made my YouTube channel terminated on my 15th birthday.</li>
+<li>grabbing people's IPs.</li>
+<li>raging on Discord users.</li>
+<li>acting way different like Coolphonix, Miguel de Oliveira Valentin, Pseudonymous Impact and many others that I can't remember.</li>
+<li>stealing phone collector's videos and refused to credit them in 2021 which resulted me in a ban for unfair reasons.</li>
+<li>false doxxing an innocent Russian person which made my first Discord account being disabled.</li>
+<li>calling emdicadrian satan for thousands of times on David Khoa's Discord server, blocking me.</li>
+<li>harassing CUBO for being what's better to join ROMphonix as his side when I got banned from the server.</li>
+<li>reviving SgtPepperArc360 Discord server via server template which is illegal.</li>
+<li>trying to act like wildcat in 2022.</li>
+<li>making stupid things to Seamus, the best friend, resulting in hate.</li>
+<li>trying to become Liam before it got exploded by one of my friends that I already cut ties with them and no longer trusting them.</li>
+<li>harassing SgtPepperArc360 with community posts which made my YouTube channel terminated on September 26th, 2022.</li>
+<li>showing my friends including Seamus to hate on Karonzilla for having his rage video in 2022.</li>
+<li>quickly switching and spamming Discord servers to spread the hate of David Egan.</li>
+<li>trying to be fetishist with my alternative accounts including two accounts that I personally use for roleplay and dragged me into drama.</li>
+<li>trying to become pagerorgy to harass him, calling his deadname and then the actual person of the community lost his privilleges which is the same user I have dealt with who said to make Soundcard to cry more on August 24th, 2023.</li>
+<li>being stupid on HTwins Discord server.</li>
+<li>calling Karonzilla's deadname before he cut ties with me for doing non-stop in December 2023 to February 2024.</li>
+<li>failing to leave the internet.</li>
+<li>making fun of Karonzilla after February 2024.</li>
+<li>arguing with people for having my evidence of calling his deadname in group chat.</li>
+<li>being a Warsaw member all day.</li>
+<li>having trouble with the police officer for harassing Karonzilla with the same reasons I have did on Discord.</li>
+<li>being permanently blocked by the ISP for port forwarding shit.</li>
+<li>and much much more....</li>
+</ol>
+<p>I am really sorry for everything what I did. Please forgive me. I know what I did because I just wanted to have fun and collect all the drama that I made by the second. I will not become a villain anymore. I really want to forget everything what happened and I hope this won't happen to me again. Please accept my apology. For all of these users who can't leave me alone will be allowed to comment on my videos before it turns into a dust and I will unblock them to do everything they want. Please have mercy. Please give me another chance. I will succeed, let it repair itself and I will become a mature person. I want to be taken care of, I will get a new life and my career. I promise, I will never post my personal information including my face, my real name or anything that has my information in it. I deleted my YouTube channel and I will never create it again. Please remove my face on your posts and move on to your life. I will behave. I will ever behave. I'm not joking. I'm crying unless if you will do that. Please. I am really sorry for doing that. I hope things will not happen again and I will play all of my games that I love in my childhood. I deleted every single face including mine and everything on my computer. I seriously believe you. Please. Give me the chance, so I will behave as long as the apology gets accepted by the way and I will never post shit about me. I'm sorry. Please accept my apology.</p>
+<p style="color:darkblue;font-style:italic;">R.I.P. ItzUltraScout - 2014-2024. You will be never forgiven.</p>
 <br><br>
-<img src="logo.svg" alt="HyperWorld - The Special Final Release" width="500px" id="logo">
-<h3>A legitimate "fanbase" site from 2019 to 2024.</h3>
+<p>My real name is Andrew (or <span style="background:black;">Andrew Gates</span> in Stockholm, Sweden).<br>
+I am 18 year old man who likes technology since 2012. I grew up no more and I can't take anything else because of people for I already know, so a few of them who may still know me in 2014 to 2017 whichever was called one of my veterans after I was the logo editor outgrew with the iconic logo called Klasky Csupo Robot Logo which they made me advance to the next level. Some kids guided me with their own object show logos and I discovered Battle for Dream Island for the first time at the age of 8 in 2014 that I still remember in my childhood.<br>
+My entire childhood was good for my entire life, especially with my family and we lived in the same house, and I did not take them seriously until 2018. In 2018 to current, I did a lot of bad things on the internet like how I harassed anybody on Hangouts (a.k.a. Google Chat), and again for my actions, it was completely fine for me... and I cannot actually explain everything for what really happened. This is all happening because I acted way different like in 2021, I became one of the dumbest things I have made was this channel where I insulted phone collectors resulting me in ban from phone community permanently and never returned. In October 2024, I came back to phone community again which it makes me happy to collaborate with other friends that are not involved with ROMphonix thing.<br>
+And for all of my bad actions that I did in the past, I am truly sorry for everything what I did. I will never do this ever again like I won't even call you anything bad but nothing, and I just improved myself into getting a life. Some people tell that getting a life is hard and changing my ways are also hard for me to understand and it is time to take a break from the internet which it will make me forget everything what happened.</p>
+<p>For all I know, it's time to go to another world of the internet, where all the happiness go without AI technology, with one of the classics don't definitely die since all people are really happy about them and they did not argue over it... but it's beyond redemption, it means we can't go back to the year of 2014.</p>
+<p>Thank you for your support and thanks for participating me.</p>
+<p>- ItzUltraScout, the site creator of HyperWORLD.</p>
 <br>
-<div id="announcement1" style="display: block;">
-<h2 style="color:yellow;">WARNING: This site will be replaced in December 31st, 2024 due to various reasons. When it's all replaced, all content will be still accessible from a different link before the day is over.</span></h2>
-<h1><a href="https://discord.gg/vUYjkCdDnU">Warsaw</a></h1>
-</div>
-<p>Hello, there's nothing to do with this site... and the bio! Please click these tabs to continue!</p>
-<br>
-<h1>Most frequently asked questions</h1>
-<h2>Do you like watching BFDI?</h2>
-<p>Why not? I watch many of them, every single day! It's been 9 years after I stumbled on logo editors watching their own shows!<br>
-Attention to TPOT 12 leakers, if you see the screen including Golf Ball and Candle, you should not put your mobile phone or a camera to record it. If you catch someone who is recording, there is a 100% chance to be forcibly ejected from the theatre. Next, when Cary and his crew were upset, he posted a video about leakers getting cooked into plates and eating them for leaking the episodes. It is no matter why they are leaking the episodes from the meetup after you got a ticket, choose a seat and watch what it really experiences you. In the future, I hope there will be no leakers around if Cary makes one of the issues due to leakers leaking the episodes again, they'll tell the people who they are.</p>
-<h2>What is your favorite color?</h2>
-<p>Indigo or I'd like to say orange, which is my best favorite color.</p>
-<h2>What's your Discord tag?</h2>
-<p style="color:red;"><del>@thisuserdoesnotexist</del></p>
-<p>Not involved on Discord, sorry. And there is the account where I deleted after this incident happened.</p>
-<p style="color:royalblue;"><del>@itzultrascout</del></p>
-<p>THIS ACCOUNT IS PERMANENTLY DELETED DUE TO INCIDENT.</p>
-<h2>What's your Discord server?</h2>
-<p><a href="https://discord.gg/DpBBJkBuzQ">Discord server</a></p>
-<h2>Have you been banned from other websites?</h2>
-<p>I remember these sites that I got banned: Omegle (it died so long), Multiplayer Piano, BonziWORLD modified versions back in 2019, Minecraft PE servers and almost extreme unhelpful Discord servers.</p>
-<li>I was banned from Omegle for hijacking the camera with my special program called "ManyCam". It was just a prank.</li>
-<li>I was banned from Multiplayer Piano for botting. This moderation was literally automated by not the owner, but the automated bot.</li>
-<li>In 2019, there are many ban reasons from BWR where I'm not going to talk anything which comes to my mind.</li>
-<li>Back in 2020, Growtopia has had a serious controversies to go to people's worlds as they really want to collect the resources and raid my world. Since Growtopia was back in 2013 and you know why it has been raided so much times. I created a world lock given by my French girlfriend which it lasted and remembered for half-decade named AHTG (Les Inexusibles d'Android High Tech Google, Ahtg The French Trainspotter or Majda) has the gold WL (full term "world lock") for a long time. Two bans for me today, determining that is the past that I have to explain about me. First of all, I was banned from Growtopia for one week for no reason; <b>TYPICALLY AT THE TRADING STORE!</b> And second, I got banned from Growtopia for 3 days for using Cheat Engine.<br>As well as I concern, I went with my knapsack and quitted Growtopia in early 2020 for some reasons; they keep raiding my world names as you know they visit and raid there for the fuck's sake.</li>
-<li>There's a <b>ONE</b> person to make themselves cringe for having an argument for profile picture problems and trying to get me terminated for impersonating a profile picture by the way... HQC (full term "High Quality Content") was falsely making accusations back in 2018 when I started looking at those videos partnering with MarioTheSpartan (a tough remixer) punishing me for the reason that I am mocking over the person copying his profile picture, related to SpongeBob SquarePants episode; since he's been using a program "CyberLink PowerDirector" for Windows, but later he moved to Sony Vegas. In the next year, I joined in his Discord server back in mid-2019 and I got banned by a stupid penguin who has a lot of English functionality. Lately for his channel got terminated for violating YouTube's Terms of Service; as he's been doing a Sub4Sub treat for his channel and it got terminated in a while, well good job YouTube for doing this job. Back then in 2021, once we met that HQC was truthfully explaining about his old channel; he never uses bots to gain subscribers.</li>
-<li>Have you heard the fanmade game of Super Mario Sunshine 128? That's right folks! Runouw officially created the game from scratch of Super Mario 63! This is the best game in my childhood playing back in the era of 2015.
-<i>I'm going to talk about the criticism of SM63's Discord server right now. Put your sunglasses on it, because it's really explicit. </i> As I joined the Super Mario 63 Discord Server, there's no other point to see what's happening in this server. April and Sekanor are the superiors of Super Mario 63 - they were moderating each other. When I uploaded those videos on YouTube instead of Discord, because you know it is a possible thief to steal someone's video without the authority to do so. When I uploaded them to the video streaming site, I started acting woozy and crazy towards to this server reacting that I am the one has been stealing and uploading the video straight to YouTube (oh well, sometimes you may be autistic if you act this crazy), if they tried to report my channel and making me terminated, I would get into trouble with my parents. It's only the cause that I'm using grandma's YouTube channel. Since after they wrote a serious contact as a theft, I got immediately banned from SM63's Discord server for life for trolling people. I know it's not good to troll towards people on Discord, and yeah if I troll a person when he is working with the server, he will report me straight to Discord's ticket request and get me banned for bothering and/or begging a person from the entire platform anymore. And also I got banned from PixelLoaf's Discord server too as well with the same reason.</li>
-<li>In early 2024, I was Cloudflare-banned from CollabVM for insulting a person who he didn't do anything, totally inside of his UserVM, then CHOCOLATEMAN came here and banned my IP address. Later when I came back on Warsaw and chatting way a lot, the admin of CollabVM unbanned me and I have access to this site again (not always).</li>
-<h2>What year did you play Minecraft?</h2>
-<p>Around in mid-2015. This is where I found the game reading the kid's magazine in the back, saying that Tom was playing Minecraft in 2015, so I hooked it up to play a beta version of Minecraft for free on my older laptop, but it is quite laggy. I rarely play Minecraft, because of my <b>STUPID</b> integrated GPU causing issues and has microstutters every 10 seconds!
-<br>I would like to come back playing Minecraft, but I did not forget what game mechanics are supposed to look like and learn how to make this block or a mob to function. Have you heard of armadillos? They aren't dangerous for this update and you can easily interact it.</p>
-<h2>What's your oldest phone and computer?</h2>
-<p>Samsung Galaxy S2 is the first device that I used in 2012. I used to play Fruit Ninja where the game was two years now and my oldest computer are two computers were running Windows XP operating system. I had so much memories from using this.<br>
-On late July 2024, I was thinking about my old laptop's operating system being stuck on Windows 10 for six years and it is extremely slow due to excessive amount of power outages but meanwhile in this operating system, opening the control panel crashes Windows Explorer, right-clicking on microphone shortly hangs, games don't work on modern 2010 hardware, Windows Error Reporting runs every single hour and bloated Windows 10 built-in applications running every day such as Microsoft Compatibility Telemetry, Device Census, sedsvc, Search and Runtime Broker. I have no options but I just turned off my WiFi connectivity to prevent any URL connection exposures. Once I get this installed, I will install Windows 7 Home Premium x86 pre-activated operating system, wipe the current drive, install it and it will be so much faster than this sucker from 2015. And what about drivers? I got three discs on my closet, the first disc is driver and utilities, second is manual and third is CyberLink applications.</p>
-<h2>What are you doing in the future?</h2>
-<p>...</p>
+<b>THIS IS THE REASON WHY I AM WRITING THIS BECAUSE I CANNOT GIVE YOU MY PAST NAME SINCE IT IS AT RISK AND I AM NOT JOKING, ALL TRASH JOKES ARE ALREADY IN VOID, AND THE MAIN CAUSE WAS MY PRIVACY REASONS REFERRING TO MY FAMILY MEMBERS BECAUSE YOU DON'T HAVE PERMISSION TO CALL ME THAT SHIT, YOU DON'T HAVE PERMISSION TO REVEAL MY OLD NAME THAT IS ALREADY RUINED IN DECEMBER 2019 AND DECEMBER 2023. DO YOU REALLY KNOW WHAT ACTUALLY HAPPENED IN DECEMBER 25TH, 2023? I THINK YOU DON'T KNOW WHAT IT MEANS. YOU ARE BEING A UNIRONIC RACIST SON OF A BRICK, LOWLIFE DEGENERATE, PROBLEMATIC ASSHAT AND DRAMAMONGER. THIS IS THE SHITTY PROBLEM I AM ASKING NOW WHEN I TRIED TO CHANGE MY WAYS AND KEPT THINKING ABOUT MY PAST NAME BEING CALLED BY SOMEONE ELSE WHICH WAS ONE PERSON BEFORE THE NEW YEAR OF 2024, I GOT A MENTAL BREAKDOWN AS WELL AS THEY DON'T REALIZE ME THAT I NEED TO GET MY APPRENTICE, CALLING ME PAST NAME NON-STOP INSTEAD OF CALLING ME FROM ONE OF THE IMPORTANT POWERWORDS WHO HAD AMAZING POWERS WHICH WAS ALREADY ISSUED IN MARCH 2020 WHEN I GOT IN BIG TROUBLE AND GOT BANNED ON RANDOM SKETCHY DISCORD SERVER FOR BEING FAT AND LITHUANIAN POTATO. AND YES, BECAUSE I STILL HAD ASD AND ADHD BECAUSE HOW MORONICALLY STUPID I AM AND I DON'T KNOW HOW TO DO IT MYSELF ESSENTIALLY. MY PAST NAME FROM 2013 TO 2019 HAS NO LINKS TO ANYTHING ELSE THAN YOU PROVE THAT I AM ONE OF THE MEMBERS WHO ARE STILL ALIVE SINCE 2014 TO NOW WHICH WAS NOW HAPPENING TO ME AND I DIDN'T REMEMBER HOW DID IT GET ISSUED! AND AFTER I POSTED HIS DUMB EXCUSE OUT OF HIM ON MY TROLL YOUTUBE CHANNEL, I FEEL THAT I WAS MANIPULATED BY HIM BUT HE TELLS ME THAT I AM NOT, ALREADY CUT TIES WITH ME AND NOW I DID SOMETHING SHIT TO HIS LIVING HELL WITH THE SAME PERSON WHERE I AM ONLY AFFILIATED TO THE REST OF THE COMMUNITY AS MY MAIN LINK TO TALK WITH DISGUSTING BRATS WHO DON'T KNOW HOW TO COMMUNICATE, A FEW MOMENTS LATER HE MADE HIM FEEL DEMOTIVATED BECAUSE OF MY ACTIONS DUE TO THE WORST INCIDENT HAPPENED IN MY ENTIRE LIFE AND I CANNOT TAKE IT ANY LONGER. IF ANYONE WHO IS SEEING THIS MESSAGE, ENOUGH PLAYING GAMES, STOP PLAYING UNFAIR CARDS, STOP DRAGGING ME INTO DRAMA, I AM NOT WITH THAT ANYMORE, IT'S GETTING EVEN WORSE THAN YOU KEEP ARGUING SHIT ABOUT ME THAT I DON'T DO SHIT AND I AM NOT JEALOUS FOR MAKING A LOT OF BULLSHIT. I AM SICK AND TIRED OF YOUR CRAP FOR GETTING ME INTO BIG TROUBLE IN REAL LIFE; FORCING ME TO DO THINGS THAT GOT ME RUINED AND GMK IS ONE OF THE TROUBLE THAT HE IS MY ARCH-NEMESIS FOR TELLING ME I HAVE A LOT OF MENTAL DISORDERS AND DEVELOPMENTAL DISORDERS DUE TO MY SHIT I MADE A HALF DECADE AGO WHEN I WAS 12, STILL DOING IT BECAUSE THEY AUTOMATICALLY TOLD ME THAT GO FUCK MYSELF IF I DON'T ACT MY AGE AND I WANT TO GIVE UP FROM DOING THAT. THANK YOU FOR READING THIS.</b><br>
+<p>...if you're still interested of using this website, you can still access to my tools that exists on this site.</p>
+<a href="index2.html">Links</a>
+<br><br>
+<p class="credits">R.I.P. HyperWORLD Server Ltd. since late 2018 for development, November 30th 2019 - December 31st 2024.</p>
 <iframe src="https://ezstat.ru/2RqKe7" width="1" height="1"></iframe>
 </div>
-
-<div id="Story" class="tabcontent">
-<br><br>
-<h2>Why HyperWorld was created?</h2>
-<p>In July 29th, 2024, when I was backing up my data on my old laptop to USB flash drive, I found a few copies of HTML named "FireSchoolDownload" in September 2019 which is not labelled as "FireGamesDownload" because that name does not exist. You always know that is a FTP-based site.<br>
-If you want to explore the nostalgia trip of my 2018 website, <a href="/fireschooldownload/Webpage.html">click here below</a>.</p>
-<br><br>
-<p>Oof, that was a long story. Back on early 2019, I started my first FTP server running on ES File Explorer in my middle school when I was 13 (as you have heard this app is being malicious by Play Protect). Nevertheless, this server is only temporary and it's running on my older phone "Sony Xperia M4 Aqua", but it didn't work very well. I changed a few hotspot names where the students can connect to my hotspot and search something nasty which they did not want to visit my FTP server acting as a web server, because I'm too dumb at hosting sites. It was called "FireSchoolDownload" by the way when I didn't learn the right skills of HTML. But in the bright side in mid-2018, I started learning HTML for a little bit, but as a 12-year old kid, my coding skills were too terrible for me.<br>
-Back on Late July 2019, I've been trying to host the server without any port forwards or tricks, but I also went into his Discord server to tell a person who is responsible of BWR ("BonziWORLD Revived") bringing the site back to life and two sites were the superiors; just like how Foodz and Seamus did it. I told him how to make a BonziWORLD server of myself without having to access the public site ever again. For most conflicts that Seamus did actually forget what to do; "port forwarding". The sunset is coming, time to sleep. That's a issue where I'm getting that I'm not forwarding to everyone. A few minutes later, I finally made this server up for everyone and now I can host anything whatever I want to.<br>
-In the end of November 2019, I made my first community called "[REDACTED]WORLD" and the site's color is actually teal for top and bottom cards. There's wasn't an domain that has been linked to something else, but it has never implemented.
-<br>
-When I got banned from bonzi.world (or bonzi.dega.io if you are sure), the unfair ban reason says: "[REDACTED]WORLD? MORE LIKE GAYWORLD", so I got my own idea as my second site of BonziWORLD FE's prototype called as "FuckWORLD" with cuss words around the site. It was created in January 18th, 2020 as a joke after some Nathan's ridiculous ban, but later it was changed to an official chat site. It wasn't totally sure that FuckWORLD is a opposite thing for young children can visit the site and ruin their feelings by themselves from using this site, so I have decided to update it more for eight months of my work to turn into a final release of BonziWORLD FE. I'm skipping to two years of incomplete creation for BonziWORLD FE. I started to work BonziWORLD FE again with more skills as I possibly can. Every update is a "sometime marking" when not all the features will begin working and make it capable as a successful website without any detail to be added.
-<br>
-Back in November 25th, 2023, the company name is now changed due to privacy reasons. "[REDACTED]" means "the owner" for what should be called for, and typically changing to "Hyper" as a very successful website name. The owner has tired of using its own past name where he doesn't want to hear from any person who are obsessed with my past name, remember to call "deadname". They are not so usable, but it can make anyone mad if someone uses the past name for nothing.
-<br>
-Today in May 16th, 2024, the new website layout has been changed.
-<br>
-After I made a clone of "BonziWORLD Revived", I renamed to "[REDACTED]WORLD Revived" which it exactly consisted to be a third BonziWORLD site. In February 2nd, 2020, the things are getting worse now. When I flushed the toilet and went to my main computer for what I have been working on, I saw two people (Erik and Seamus) sitting in my third website asking me that I need to take it down, but I actually "refuse" to take my server down for what Seamus is saying. The footage can still be found <a href="https://www.youtube.com/watch?v=Ft-evp9wa0I" target="_blank">right here</a> and the rest of the logs that I have gathered by myself.
-</div>
-
-<div id="Links" class="tabcontent">
-<br><br>
-<p>If you want to host the servers offline, here's some links which you need. Modifying is required (unless your computer is different)! <a href="https://www.mediafire.com/folder/2vssve1lnr5yh/BonziWORLD+Servers">Folder 1</a> and <a href="https://www.mediafire.com/folder/nujzrpl51zumq/2019_servers">Folder 2</a>.</p>
-<br>
-<p><a href="phonemes.html">FakeYou phonemes</a></p>
-<p><a href="davidegan.html">David Egan Rant</a></p>
-<p><a href="/latvia_vacation">Latvia journey</a></p>
-<p><a href="swearing.html">Swearing</a></p>
-<p><a href="training_voice.html">FakeYou voice training test</a></p>
-<p><a href="gallery.html">Gallery (MY FAVS.)</a></p>
-<p><a href="/exploit">Exploits</a></p>
-<p><a href="/encryption">Encrypt Text</a></p>
-<p><a href="converter3.html">Jabbifier</a></p>
-<p><a href="ytconverter.html">YouTube Thumbnail Converter</a></p>
-<p><a href="gg.html">Game Genie Randomizer for NES</a></p>
-<br>
-<h1>Other links:</h1>
-<p><a href="/rawpixels">RAW Pixels</a></p>
-<p><a href="discordbots.html" class="rainbowTest">Source code for Discord bots</a> <font color="red">(NEW)</font></p>
-<p><a href="/transcripts" class="rainbowTest">Transcripts</a></p>
-<p>It's good and better than ever before! Read it carefully!</p>
-<p><a href="/pmdm">Generators/Tools</a></p>
-<p>Want to explore some tools where I have made? Try visiting PMDM for really cool stuff!</p>
-</div>
-
-<div id="About" class="tabcontent">
-<br><br>
-<img src="logo.svg" alt="HyperWorld - The Special Final Release" width="500px" id="logo">
-<p>New layout made by "THE OWNER OF HYPERWORLD". You are now on the GitHub version.</p>
-<p>All rights reserved. HyperWORLD Server Ltd. 2019-2024.</p>
-<br>
-<p>Please note, this page was entirely hosted on Fastly's GitHub pages. There are no servers inside for this page. The actual page can be found on official HyperWORLD page which is now without GitHub.</p>
-<br>
-<h1>IF THERE'S AN INSIGNIFICANT IMPROVEMENT FOR THIS SITE, PLEASE CONTACT US <del>HERE</del> (E-mails have been removed due to final countdown).</h1>
-<p>Please do not use this business e-mail. Just remember you don't use people's e-mails as long as you have a point.</p>
-<p><b>WARNING:</b> ANY LETTER THAT YOU SENT CONTAINS DISRESPECTFUL OR FREEDOM OF SPEECH WILL NOT BE TOLERATED AND WILL NOT BE READ BY THE OWNER. PLEASE TRY AGAIN FOR THE NEXT VERSION OF THE DAY.</p>
-<p>Thank you for understanding.</p>
-</div>
-</div>
-
 <script>
-function openPage(pageName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
-
-document.getElementById("defaultOpen").click();
-	
 window.addEventListener("load", () => {
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("service-worker.js");
   }
 });
 </script>
-   
 </body>
-</html> 
+</html>
