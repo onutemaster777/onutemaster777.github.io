@@ -35,6 +35,7 @@ body { text-align: center; color: black; background: white; font-family: Eurosti
 <option value="uniEliminatorEncryption">Unicode Eliminator (decode only)</option>
 <option value="hEncryption">Letter H converter (decode only)</option>
 <option value="ltModeEncryption">Lithuanian Accent Encryption</option>
+<option value="leetEncryption">Text to Number Encryption (encode only)</option>
 </select>
 <br><br>
 <textarea style="resize:none;" cols="70" rows="15" id="languageBase">
@@ -598,6 +599,41 @@ replaceFromText("IE","Ė");
 replaceFromText("...","…");
 replaceFromText('"','”');
 replaceFromText("'","‘");
+}
+
+if(document.getElementById("encryptionMode").value === "leetEncryption"){
+replaceFromText("q","0");
+replaceFromText("e","3");
+replaceFromText("t","7");
+replaceFromText("i","1");
+replaceFromText("o","0");
+replaceFromText("a","4");
+replaceFromText("s","5");
+replaceFromText("g","9");
+replaceFromText("l","1");
+replaceFromText("c","3");
+replaceFromText("ą","4");
+replaceFromText("č","3");
+replaceFromText("ę","3");
+replaceFromText("ė","3");
+replaceFromText("į","1");
+replaceFromText("š","5");
+replaceFromText("Q","0");
+replaceFromText("E","3");
+replaceFromText("T","7");
+replaceFromText("I","1");
+replaceFromText("O","0");
+replaceFromText("A","4");
+replaceFromText("S","5");
+replaceFromText("G","9");
+replaceFromText("L","1");
+replaceFromText("C","3");
+replaceFromText("Ą","4");
+replaceFromText("Č","3");
+replaceFromText("Ę","3");
+replaceFromText("Ė","3");
+replaceFromText("Į","1");
+replaceFromText("Š","5");
 }
 }
 
@@ -1710,6 +1746,10 @@ replaceFromText("Ė","Ie");
 replaceFromText("…","...");
 replaceFromText('”','"');
 replaceFromText("‘","'");
+}
+
+if(document.getElementById("encryptionMode").value === "leetEncryption"){
+alert("Decoding not supported!");
 }
 }
 </script>
